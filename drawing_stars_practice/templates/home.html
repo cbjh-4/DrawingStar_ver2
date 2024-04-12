@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Game Home</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding : 0;
+            font-family: arial;
+            box-sizing: border-box;
+        }
+        #wrap{
+            width: 400px;
+            height: 800px;
+            text-align: center;
+        }
+        #header{
+            width: 100%;
+            height: 30%;
+            background-color: dodgerblue;
+            display: flex; /* Flexbox 사용 */
+            justify-content: center; /* 수평 중앙 정렬 */
+            align-items: center; /* 수직 중앙 정렬 */            
+        }
+        #contents{
+            width: 100%;
+            height: 30%;
+            background-color: lightblue;
+            
+            display: flex; /* Flexbox 사용 */
+            justify-content: center; /* 수평 중앙 정렬 */
+            align-items: center; /* 수직 중앙 정렬 */  
+            
+            color: brown;
+            font-size: 300%;
+            font-weight: bolder;
+        }
+        a {
+            text-decoration-line: none;
+        }
+        #contents>p :hover{
+            color: darkorange;
+        }
+        #contents>p :active{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id = "wrap">
+        <div id = "header">
+            <h1>Drawing Game!</h1>
+        </div>
+        <div id = contents>
+            <p><a href="/star">별 그리기</a></p>
+        </div>
+    </div>
+</body>
+</html>
